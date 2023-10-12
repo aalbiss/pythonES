@@ -22,3 +22,7 @@ stampa(nomiKM())
 
 #2 modo: dizionari
 
+import funzioni
+
+n=int(input("Quanti elementi vuoi inserire? "))
+funzioni.stampa(funzioni.nomiKM(n),n)
