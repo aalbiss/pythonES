@@ -9,5 +9,4 @@ def inserimentoVoti():
     return nomiVoti
 
 
-def percentualeOttenuta():
-    
+# def percentualeOttenuta()
