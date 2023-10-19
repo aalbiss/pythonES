@@ -17,5 +17,3 @@ def visualizza(V):
     print(len(V))
     
 visualizza(creazioneNumeri())
-    
-        
