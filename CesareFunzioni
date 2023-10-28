@@ -1,0 +1,33 @@
+def cesareCifrato(testoChiaro,passo):
+    testoCifrato=""  
+    for i in testoChiaro:
+        if(ord(i)+passo)>90:
+            x=chr(ord(i)+passo-26)
+        else:
+            x=chr(ord(i)+passo)
+            
+        if(ord(i)+passo)>122:
+            x=chr(ord(i)+passo-26)
+        else:
+            x=chr(ord(i)+passo)
+            
+        if ord(i)==32:
+            x=chr(32)
+        testoCifrato=testoCifrato+str(x)
+        
+    return(testoCifrato)
+    
+    
+testoChiaro = input("Insersci il testo: ")
+passo=int(input("Inserisci il passo: "))
+while passo<3 or passo >10:
+    passo=int(input("Inserisci il passo: "))
+    
+print(cesareCifrato(testoChiaro,passo))
+
+
+
+
+
+
+    

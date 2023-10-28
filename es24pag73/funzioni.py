@@ -7,6 +7,4 @@ def inserimentoVoti():
             voto=int(input("Inserisci voto: "))
         nomiVoti[1].append(voto)
     return nomiVoti
-
-
 # def percentualeOttenuta()
