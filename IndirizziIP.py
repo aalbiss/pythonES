@@ -114,4 +114,6 @@ b = random.randint(0, 255)
 c = random.randint(0, 255)
 d = random.randint(0, 255)
 
+classe(a,b,c,d)
+submaskClassi(a)
 submMaskVariabile()
