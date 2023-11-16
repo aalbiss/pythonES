@@ -79,8 +79,6 @@ def submMaskVariabile():
     subnet = ""
     subnetDec = ""
     k = 0
-    l = 0
-    F = []
     A = []
     for i in range(1, submask + 1):
         subnet += "1"
