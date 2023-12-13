@@ -1,0 +1,36 @@
+class Canzone():
+    artista=""
+    titolo=""
+    durata=0
+    genere=""
+    
+    def __init__(self):
+        self.artista=""
+        self.titolo=""
+        self.durata=0
+        self.genere=""
+    def __str__(self):
+        return (f"artista: {self.artista},titolo: {self.titolo},durata: {self.durata},genere: {self.genere}")
+    def inserimento(self):
+        self.artista=input("Inserisci artista: ")
+        self.titolo=input("Inserisci titolo: ")
+        self.durata=int(input("Inserisci durata: "))
+        self.genere=input("Inserisci genere: ")
+    
+class Playlist():
+    playlist=[]
+    def inserimento(self,numeroC):
+        for i in range(numeroC):
+            canzone=Canzone()
+            canzone.inserimento()
+            playlist.append(canzone)
+        
+    def __str__(self):
+        for i in range(len(playlist)):
+            print(playlist[i])
+            
+
+playlist = Playlist()
+
+playlist.inserimento()
+print(playlist)
